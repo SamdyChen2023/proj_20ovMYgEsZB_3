@@ -22,9 +22,9 @@ function Header() {
           <div className="text-2xl font-bold text-gradient">Brand</div>
           
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-[var(--text-dark)] hover:text-[var(--primary-color)] transition-colors">Home</a>
-            <a href="#features" className="text-[var(--text-dark)] hover:text-[var(--primary-color)] transition-colors">Features</a>
-            <a href="#about" className="text-[var(--text-dark)] hover:text-[var(--primary-color)] transition-colors">About</a>
+            <a href="index.html#home" className="text-[var(--text-dark)] hover:text-[var(--primary-color)] transition-colors">Home</a>
+            <a href="index.html#features" className="text-[var(--text-dark)] hover:text-[var(--primary-color)] transition-colors">Features</a>
+            <a href="about.html" className="text-[var(--text-dark)] hover:text-[var(--primary-color)] transition-colors">About</a>
             <button className="btn-primary">Get Started</button>
           </nav>
         </div>

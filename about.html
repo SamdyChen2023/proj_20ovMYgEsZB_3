@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Our Story & Team</title>
+    <meta name="description" content="Learn about our mission, values, and the passionate team behind our innovative platform.">
+    <meta name="keywords" content="about us, team, company, mission, values">
+    
+    <meta property="og:title" content="About Us - Our Story & Team">
+    <meta property="og:description" content="Learn about our mission, values, and the passionate team behind our innovative platform.">
+    
+    <meta name="twitter:title" content="About Us - Our Story & Team">
+    <meta name="twitter:description" content="Learn about our mission, values, and the passionate team behind our innovative platform.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            color: var(--text-dark);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-8 py-3 rounded-full font-semibold transition-all duration-300;
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            @apply scale-105 shadow-lg;
+        }
+    }
+
+    @layer utilities {
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/about/AboutHero.js"></script>
+    <script type="text/babel" src="components/about/Story.js"></script>
+    <script type="text/babel" src="components/about/Values.js"></script>
+    <script type="text/babel" src="components/about/Team.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="about-app.js"></script>
+</body>
+</html>
